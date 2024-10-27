@@ -7,6 +7,9 @@ import { useNavigate } from 'react-router-dom'
 import { onAuthStateChanged,signOut } from "firebase/auth";
 import { auth } from '../../utils/firebase'
 import { addUser } from '../../redux/userSlice'
+import avatar from "../../assets/avatar.jpg"
+import {  ignOut } from "firebase/auth";
+
 
 const Header = () => {
 
@@ -42,23 +45,22 @@ const Header = () => {
 
   return (
     <div className="header">
-        <nav>
-            <img src={LOGO} alt="logo" className="logo"></img>
-            {data ? <h2 onClick={()=>{
-              signOut(auth)
-              .then(() => {
-                
-              })
-              .catch((error) => {
-                navigate("/error");
-              });
+            <img src={LOGO} alt="logo" className="logo" />
 
-            }}>(SignOut)</h2> :null}
+            {data ? (
+                <div className="sign-out" onClick={() => {
+                  signOut(auth).then(() => {
+                    // Sign-out successful.
+                  }).catch((error) => {
+                    // An error happened.
+                  });
 
-        </nav>
-        <h1></h1>
-       
-    </div>
+                }}>
+                    <img src={avatar} className='avatar' alt="avatar" />
+                    
+                </div>
+            ) : null}
+        </div>
   )
 }
 
