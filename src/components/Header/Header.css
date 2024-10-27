@@ -1,8 +1,13 @@
 .header{
     position: absolute;
     width: 100%;
+    color: #e43030;
 }
-
+nav{
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+}
 .logo{
     width: 170px;
 }

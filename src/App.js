@@ -1,10 +1,16 @@
 import Body from "./Body";
+import appStore from "./redux/appStore";
+import {Provider} from "react-redux"
 
 function App() {
   return (
-    <>
-    <Body/>
-    </>
+    <Provider store={appStore}>
+       <Body/>
+
+    </Provider>
+   
+   
+   
   );
 }
 

@@ -4,7 +4,13 @@ import Header from '../Header/Header'
 import formValidation from '../../utils/formValidation'
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile  } from "firebase/auth";
 import {auth} from "../../utils/firebase"
+import { useDispatch } from 'react-redux';
+import {addUser, removeUser} from "../../redux/userSlice"
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
+
+  const dispatch=useDispatch();
+  const navigate=useNavigate();
 
   const handleSignIn=()=>{
     setIsSignIn(!isSignIn);
@@ -25,18 +31,24 @@ const Login = () => {
 
     
       createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
-    .then((userCredential) => {
+     .then((userCredential) => {
       // Signed up 
       const user = userCredential.user;
       updateProfile(auth.currentUser, {
         displayName: name.current.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
       }).then(() => {
 
-        const user=auth.currentUser;
-        console.log(user.displayName);
+        const {uid,displayName,email,password}=auth.currentUser;
+
+        dispatch(addUser({uid:uid,displayName:displayName,email:email,password:password}));
+        // navigate("/browse");
+
+        
         
       }).catch((error) => {
         // An error occurred
+       
+    
         // ...
       });
       
@@ -45,20 +57,27 @@ const Login = () => {
       const errorCode = error.code;
       const errorMessage = error.message;
       setErrorMessage(errorMessage);
+      dispatch(removeUser());
       // ..
     });
   }
   else{
     signInWithEmailAndPassword(auth, email.current.value, password.current.value)
-  .then((userCredential) => {
+   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
+    const {uid,email,password}=auth.currentUser;
+
+    dispatch(addUser({uid:uid,email:email,password:password}));
+    // navigate("/browse");
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     setErrorMessage(errorMessage);
+    dispatch(removeUser())
+    
   });
   }
 
