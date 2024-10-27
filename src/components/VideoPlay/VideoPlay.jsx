@@ -18,10 +18,13 @@ const VideoPlay = ({movieId}) => {
 
   return (
     <div className="video-play">
-      <iframe className="iframe-style" 
-      src={"https://www.youtube.com/embed/" +trailerVideo?.key+ "?si=HS0_QAjDW6Rn4uhi" + "?&autoplay=1&mute=1" }
-      title="YouTube video player" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      <iframe
+      
+      className="iframe-style"
+      src={`https://www.youtube.com/embed/${trailerVideo?.key}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=0`}
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      
       ></iframe>
     </div>
   )

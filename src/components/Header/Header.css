@@ -3,12 +3,11 @@
     top: 0;
     left: 0;
     right: 0;
-    border: solid black 1px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px; /* Adjust as needed */
+    padding: 0px 40px; /* Adjust as needed */
     align-items: center;
-    background-color: transparent;
+   
  
 }
 

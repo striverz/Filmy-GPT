@@ -11,7 +11,7 @@ const Browse = () => {
     <div className='browse'>
       <Header/>
       <TrailerContainer/>
-      <MoviesContainer/>
+      {/* <MoviesContainer/> */}
       
      
     </div>

@@ -1,10 +1,37 @@
-.video-info{
-    border: solid black 1px;
-    padding: 50px;
-    
-    
+.video-info {
+    position: absolute;
+    color: #fff;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Add some padding for spacing */
+   
+
 }
 
-.video-info p{
-    width: 300px;
+.video-info h1 {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 8px; /* Space between title and overview */
+}
+
+.video-info p {
+    font-size: 14px; /* Adjust font size */
+    line-height: 1.5; /* Improved line height for readability */
+    margin-bottom: 16px; /* Space between overview and buttons */
+}
+
+.video-info button {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    border: none;
+    padding: 10px 16px; /* Add padding for buttons */
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 8px; /* Space between buttons */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.video-info button:hover {
+    background-color: #f40612; /* Darker red on hover */
 }
