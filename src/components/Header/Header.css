@@ -1,7 +1,10 @@
 .header{
     position: absolute;
+    top: 0;
     width: 100%;
     color: #e43030;
+    border: solid black 1px;
+
 }
 nav{
     padding: 0px 40px;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Header.css"
-import logo from "../../assets/logo.png"
+import {LOGO} from "../../utils/consts"
 import { useSelector,useDispatch } from 'react-redux'
 import { removeUser } from '../../redux/userSlice'
 import { useNavigate } from 'react-router-dom'
@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <div className="header">
         <nav>
-            <img src={logo} alt="logo" className="logo"></img>
+            <img src={LOGO} alt="logo" className="logo"></img>
             {data ? <h2 onClick={()=>{
               signOut(auth)
               .then(() => {

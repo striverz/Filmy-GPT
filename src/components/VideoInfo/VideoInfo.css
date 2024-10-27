@@ -1,0 +1,10 @@
+.video-info{
+    border: solid black 1px;
+    padding: 50px;
+    
+    
+}
+
+.video-info p{
+    width: 300px;
+}
