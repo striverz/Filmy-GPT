@@ -20,7 +20,7 @@
     text-align: center; /* Center text inside the form */
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     color: #fff;
 }
 
@@ -78,4 +78,8 @@
 
 .login-form p:hover {
     color: #e50914; /* Change color on hover */
+}
+.error-msg{
+    color: red;
+    text-align: left;
 }
