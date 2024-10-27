@@ -1,0 +1,81 @@
+.login-page {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Semi-transparent black gradient */
+        url("../../assets/netflix-bg.jpg"); /* Background image */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+}
+
+.login-form {
+    background: rgba(0, 0, 0, 0.75); /* Darker background for the form */
+    padding: 50px; /* Space inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
+    width: 320px; /* Fixed width for the form */
+    text-align: center; /* Center text inside the form */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.login-form h1 {
+    color: #ffffff; /* Text color for the heading */
+    font-size: 24px; /* Heading font size */
+}
+
+.login-form input {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Space inside inputs */
+    margin: 0.5rem 0; /* Space between inputs */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    background: rgba(255, 255, 255, 0.1); /* Light background for inputs */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: border 0.3s; /* Smooth border transition */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.login-form input:focus {
+    border: 1px solid #e50914; /* Red border on focus */
+    outline: none; /* Remove outline */
+}
+
+.login-form button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Space inside button */
+    margin-top: 1rem; /* Space above the button */
+    background-color: #e50914; /* Netflix red */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-sizing: border-box; /* Ensure button size includes padding */
+}
+
+.login-form button:hover {
+    background-color: #f40612; /* Darker red on hover */
+    /* transform: scale(1.05); Slightly enlarge on hover */
+}
+
+
+.login-form p {
+    color: #ffffff; /* White text color */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 10px; /* Space above the paragraph */
+    font-size: 16px; /* Font size */
+    text-decoration: underline; /* Underline text for emphasis */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.login-form p:hover {
+    color: #e50914; /* Change color on hover */
+}
