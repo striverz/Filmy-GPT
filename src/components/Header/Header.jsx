@@ -9,7 +9,7 @@ import { auth } from '../../utils/firebase'
 import { addUser } from '../../redux/userSlice'
 import avatar from "../../assets/avatar.jpg"
 import {  ignOut } from "firebase/auth";
-
+import {toogleGptSearchValue} from "../../redux/gptSlice"
 
 const Header = () => {
 
@@ -43,22 +43,31 @@ const Header = () => {
   
   },[]);
 
+  const handleGPTSearch=()=>{
+    //do something
+    dispatch(toogleGptSearchValue());
+  }
+
   return (
     <div className="header">
             <img src={LOGO} alt="logo" className="logo" />
 
             {data ? (
-                <div className="sign-out" onClick={() => {
+                <div className="sign-out">
+
+                  <button onClick={handleGPTSearch}>GPT Search</button>
+                  
+                    <img src={avatar} className='avatar' alt="avatar" onClick={() => {
                   signOut(auth).then(() => {
                     // Sign-out successful.
                   }).catch((error) => {
                     // An error happened.
                   });
 
-                }}>
-                    <img src={avatar} className='avatar' alt="avatar" />
+                }}/>
                     
                 </div>
+                
             ) : null}
         </div>
   )

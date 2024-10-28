@@ -6,6 +6,8 @@ import MoviesContainer from "../MoviesContainer/MoviesContainer"
 import usePopularMovies from "../../hooks/usePopularMovies"
 import useTopRatedMovies from "../../hooks/useTopRatedMovies"
 import useUpcomingMovies from "../../hooks/useUpcomingMovies"
+import GPTSearch from "../GPTSearch/GPTSearch"
+import { useSelector } from "react-redux"
 const Browse = () => {
   //custom hood for calling api and putting data into our appStore
   useNowPlayingMovies();
@@ -13,11 +15,21 @@ const Browse = () => {
   useTopRatedMovies();
   useUpcomingMovies();
 
+  const gptSearchValue=useSelector(store=>store.gpt.gptSearchValue);
+
   return (
     <div className='browse'>
       <Header/>
-      <TrailerContainer/>
-      <MoviesContainer/>
+      {
+        gptSearchValue 
+        ? <GPTSearch/> : 
+        <>
+         <TrailerContainer/>
+         <MoviesContainer/>
+        </>
+      }
+      
+     
       
      
     </div>
