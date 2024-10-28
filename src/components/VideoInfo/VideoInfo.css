@@ -3,12 +3,11 @@
     color: #fff;
     width: 400px;
     border-radius: 8px; /* Rounded corners */
-    padding: 16px; /* Add some padding for spacing */
+    padding: 16px; /* Spacing inside the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the element’s width */
     
-    aspect-ratio: 16/9;
-    padding-top: 20%;
-   
-
+    
+    
 }
 
 .video-info h1 {
@@ -19,19 +18,19 @@
 .video-info p {
     font-size: 14px; /* Adjust font size */
     line-height: 1.5; /* Improved line height for readability */
-    margin-bottom: 16px; /* Space between overview and buttons */
+    margin-bottom: 16px; /* Space between paragraph and buttons */
 }
 
 .video-info button {
     background-color: #e50914; /* Netflix red */
     color: #fff;
     border: none;
-    padding: 10px 16px; /* Add padding for buttons */
-    border-radius: 4px; /* Rounded corners for buttons */
+    padding: 10px 16px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     margin-right: 8px; /* Space between buttons */
-    font-size: 16px; /* Font size for buttons */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
 .video-info button:hover {
