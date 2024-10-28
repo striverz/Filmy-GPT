@@ -1,0 +1,9 @@
+.movies-list{
+    border: solid red 1px;
+
+}
+
+.movies-list-cards{
+    display: flex;
+    overflow-x: scroll;
+}

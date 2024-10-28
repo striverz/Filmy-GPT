@@ -13,7 +13,7 @@ const useMovieTrailer = (movieId) => {
         const fetchTrailers=json?.results?.filter((movie)=>movie.type=="Trailer");
        
         const trailer=fetchTrailers ? fetchTrailers[0] : json?.resutls[0];
-        console.log(trailer);
+       
         dispatch(addMovieTrailer(trailer));
 
       }

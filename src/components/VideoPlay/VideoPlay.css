@@ -1,14 +1,14 @@
 .video-play {
-    width: 100%; /* Full width of the viewport */
-    height: 100%; 
+    width: 100vw; /* Full width of the viewport */
 }
 .iframe-style {
     margin-top: -95px;
-    width: 100%; 
+    width: 100vw; 
     aspect-ratio: 16/9; 
     border: none;
    
 }
+
 
 @media(max-width:650px){
     .iframe-style{
