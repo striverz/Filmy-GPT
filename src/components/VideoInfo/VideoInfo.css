@@ -4,8 +4,10 @@
     width: 400px;
     border-radius: 8px; /* Rounded corners */
     padding: 16px; /* Spacing inside the container */
-    box-sizing: border-box; /* Ensure padding and border are included in the element’s width */
+   
+    margin-bottom: 160px;
     
+  
     
     
 }
@@ -35,4 +37,11 @@
 
 .video-info button:hover {
     background-color: #f40612; /* Darker red on hover */
+}
+
+
+@media(max-width:750px){
+    .video-info{
+        display: none;
+    }
 }

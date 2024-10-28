@@ -1,9 +1,13 @@
 .movies-list{
-    border: solid red 1px;
-
+    padding: 10px;
+}
+.movies-list-cards {
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    
 }
 
-.movies-list-cards{
-    display: flex;
-    overflow-x: scroll;
+.movies-list-cards::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari, etc.) */
 }
