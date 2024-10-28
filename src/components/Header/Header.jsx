@@ -66,14 +66,14 @@ const Header = () => {
             {data ? (
                 <div className="sign-out">
 
-                  <select onChange={handleLanguageSelected}>
+                  {gptSearchValue ? <select onChange={handleLanguageSelected}>
                     {SUPPORTED_LANGUAGES.map((lang)=>{
                       return(
                         <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
                       )
                     })}
                     
-                  </select>
+                  </select> :null}
 
                   <button onClick={handleGPTSearch}>{gptSearchValue ? "Back to Home" :"GPT Search"}</button>
                   

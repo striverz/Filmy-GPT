@@ -1,0 +1,13 @@
+.gpt{
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Semi-transparent black gradient */
+    url("../../assets/netflix-bg.jpg");
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

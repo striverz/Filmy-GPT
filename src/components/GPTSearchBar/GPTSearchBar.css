@@ -1,0 +1,24 @@
+.gpt-searchbar{
+   
+    margin-top: 10%;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+.gpt-searchbar input{
+    padding: 10px;
+    width: 360px;
+}
+
+.gpt-searchbar button{
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    border: none;
+    
+}
