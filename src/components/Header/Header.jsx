@@ -10,9 +10,12 @@ import { addUser } from '../../redux/userSlice'
 import avatar from "../../assets/avatar.jpg"
 import {  ignOut } from "firebase/auth";
 import {toogleGptSearchValue} from "../../redux/gptSlice"
+import { SUPPORTED_LANGUAGES } from '../../utils/consts'
+import { changeLanguage } from '../../redux/configSlice'
 
 const Header = () => {
 
+  
   const data=useSelector((store)=>store.user);
   const dispatch=useDispatch();
   const navigate=useNavigate();
@@ -48,6 +51,14 @@ const Header = () => {
     dispatch(toogleGptSearchValue());
   }
 
+  const gptSearchValue=useSelector(store=>store.gpt.gptSearchValue);
+
+  const handleLanguageSelected=(e)=>{
+    // console.log(e.target.value);
+    dispatch(changeLanguage(e.target.value));
+
+  }
+
   return (
     <div className="header">
             <img src={LOGO} alt="logo" className="logo" />
@@ -55,7 +66,16 @@ const Header = () => {
             {data ? (
                 <div className="sign-out">
 
-                  <button onClick={handleGPTSearch}>GPT Search</button>
+                  <select onChange={handleLanguageSelected}>
+                    {SUPPORTED_LANGUAGES.map((lang)=>{
+                      return(
+                        <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>
+                      )
+                    })}
+                    
+                  </select>
+
+                  <button onClick={handleGPTSearch}>{gptSearchValue ? "Back to Home" :"GPT Search"}</button>
                   
                     <img src={avatar} className='avatar' alt="avatar" onClick={() => {
                   signOut(auth).then(() => {
