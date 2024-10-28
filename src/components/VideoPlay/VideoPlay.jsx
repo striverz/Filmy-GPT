@@ -7,14 +7,9 @@ import useMovieTrailer from "../../hooks/useMovieTrailer";
 
 const VideoPlay = ({movieId}) => {
 
-
-  
   useMovieTrailer(movieId);
 
   const trailerVideo=useSelector((store)=>store.movies?.movieTrailer);
-
-  
-  
 
   return (
     <div className="video-play">
