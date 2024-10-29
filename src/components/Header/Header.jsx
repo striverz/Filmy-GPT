@@ -26,7 +26,7 @@ const Header = () => {
    const unsubscribe= onAuthStateChanged(auth, (user) => {
     
       if (user) {
-        // console.log("user called");
+        
         
         const {uid,email,password} = user;
         dispatch(addUser({uid:uid,email:email,password:password}));
@@ -54,7 +54,7 @@ const Header = () => {
   const gptSearchValue=useSelector(store=>store.gpt.gptSearchValue);
 
   const handleLanguageSelected=(e)=>{
-    // console.log(e.target.value);
+    
     dispatch(changeLanguage(e.target.value));
 
   }

@@ -6,7 +6,7 @@ const MovieCard = ({movieImg}) => {
  
   return (
     <div className='movie-card'>
-        <img src={IMG_CDN_URL+movieImg} className='movie-card-img'></img>
+        <img src={IMG_CDN_URL+movieImg} className='movie-card-img' alt='movie-card'></img>
     </div>
   )
 }

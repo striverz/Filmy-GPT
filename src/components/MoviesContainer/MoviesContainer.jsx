@@ -7,7 +7,7 @@ const MoviesContainer = () => {
   const movies=useSelector(store=>store.movies);
  
 
-  // console.log(movies.nowPlayingMovies);
+  
   return (
     <div className='movies-container'>
       <MoviesList title={"Now Playing"} movies={movies.nowPlayingMovies} />

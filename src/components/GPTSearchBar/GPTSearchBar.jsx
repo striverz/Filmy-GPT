@@ -38,9 +38,8 @@ const GPTSearchBar = () => {
     // });
     // if (!gptResults.choices) {
     // }
-    // console.log(gptResults.choices?.[0]?.message?.content);
     // const gptMovies = gptResults.choices?.[0]?.message?.content.split(",");
-    // console.log(gptMovies);
+   
 
 
     
