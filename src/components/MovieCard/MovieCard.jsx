@@ -2,6 +2,8 @@ import React from 'react'
 import {IMG_CDN_URL} from "../../utils/consts";
 import "./MovieCard.css"
 const MovieCard = ({movieImg}) => {
+  if(!movieImg) return null;
+ 
   return (
     <div className='movie-card'>
         <img src={IMG_CDN_URL+movieImg} className='movie-card-img'></img>

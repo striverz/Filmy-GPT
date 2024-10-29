@@ -43,8 +43,16 @@ const GPTSearchBar = () => {
     // console.log(gptMovies);
 
 
-    //HardCoded Data
-    const gptResults=["Zindagi Na Milegi Dobara","Yeh Jawaani Hai Deewani","3 Idiots","Dil Chahta Hai","English Vinglish","Chhichhore","Queen"];
+    
+    const gptResults = [
+      "Gangubai Kathiawadi",
+      "Jersey",
+      "Brahmāstra: Part One – Shiva",
+      "Bholaa",
+      "Zara Hatke Zara Bachke",
+      "Rocky Aur Rani Ki Prem Kahani",
+      "Gadar 2"
+    ];
 
     const promiseArray=gptResults.map((movie)=>searchMovieTMDB(movie));
 
