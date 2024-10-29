@@ -1,13 +1,13 @@
-.gpt{
+.gpt {
     background: 
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Semi-transparent black gradient */
-    url("../../assets/netflix-bg.jpg");
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url("../../assets/netflix-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed in place */
+    min-height: 100vh;
+    overflow: hidden; /* Prevents unwanted scrollbars */
+
+   
 }

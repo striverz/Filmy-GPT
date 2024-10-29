@@ -1,3 +1,10 @@
-.gpt-movies{
-    width: 100vw;
+.gpt-movies {
+    margin-top: 300px; 
+    padding: 0px 20px;
+    color: white;
+    border-radius: 8px;
+    overflow-y: auto;
+
+    
+
 }

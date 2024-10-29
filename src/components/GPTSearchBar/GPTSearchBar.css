@@ -1,24 +1,44 @@
-.gpt-searchbar{
-   
-    margin-top: 10%;
-    width: 500px;
+.gpt-searchbar {
+    position: absolute; /* Positions the search bar absolutely within .gpt */
+    top: 25%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
     display: flex;
-    justify-content: space-around;
-   
+    gap: 8px; /* Space between input and button */
+    padding: 16px;
+     background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
 
-}
-
-.gpt-searchbar input{
-    padding: 10px;
-    width: 360px;
-}
-
-.gpt-searchbar button{
-    padding: 10px;
-    width: 100px;
-    cursor: pointer;
-    color: #fff;
-    background-color: red;
-    border: none;
     
+}
+
+.gpt-searchbar input {
+    padding: 10px 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.gpt-searchbar button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #e50914; /* Netflix-like red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+
+    .gpt-searchbar input {
+        padding: 10px 20px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+    }
+
 }

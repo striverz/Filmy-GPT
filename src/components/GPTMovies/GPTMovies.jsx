@@ -11,7 +11,8 @@ const GPTMovies = () => {
     if(!gptMovieNames) return null;
 
   return (
-    <div className='gpt-movies'>
+    <div className='gpt-movies'> 
+    
         {
             gptMovieNames.map((movie,ind)=><MoviesList key={movie} title={movie} movies={gptMovieResults[ind]} />)
         }
