@@ -8,9 +8,7 @@ function App() {
        <Body/>
 
     </Provider>
-   
-   
-   
+
   );
 }
 
