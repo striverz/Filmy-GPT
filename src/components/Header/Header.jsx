@@ -24,10 +24,7 @@ const Header = () => {
     
     
    const unsubscribe= onAuthStateChanged(auth, (user) => {
-    
       if (user) {
-        
-        
         const {uid,email,password} = user;
         dispatch(addUser({uid:uid,email:email,password:password}));
         navigate("/browse");
@@ -64,8 +61,9 @@ const Header = () => {
             <img src={LOGO} alt="logo" className="logo" />
 
             {data ? (
-                <div className="sign-out">
+                <div className="nav-right">
 
+                  
                   {gptSearchValue ? <select onChange={handleLanguageSelected}>
                     {SUPPORTED_LANGUAGES.map((lang)=>{
                       return(
@@ -75,8 +73,11 @@ const Header = () => {
                     
                   </select> :null}
 
-                  <button onClick={handleGPTSearch}>{gptSearchValue ? "Back to Home" :"GPT Search"}</button>
-                  
+                  <button className='search-btn' onClick={handleGPTSearch}>{gptSearchValue ? "Browse" :"GPT Search"}</button>
+
+                   
+
+        
                     <img src={avatar} className='avatar' alt="avatar" onClick={() => {
                   signOut(auth).then(() => {
                     // Sign-out successful.
