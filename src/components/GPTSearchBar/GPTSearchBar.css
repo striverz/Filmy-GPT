@@ -1,3 +1,8 @@
+
+.gpt-search{
+    
+}
+
 .gpt-searchbar {
     position: absolute; /* Positions the search bar absolutely within .gpt */
     top: 25%; 
@@ -19,6 +24,7 @@
     border: none;
     border-radius: 4px;
     outline: none;
+    min-width: 400px;
 }
 
 .gpt-searchbar button {
@@ -39,6 +45,7 @@
         border: none;
         border-radius: 4px;
         outline: none;
+        min-width: 150px;
     }
 
 }

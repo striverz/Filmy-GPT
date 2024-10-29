@@ -13,6 +13,11 @@ const languagePrefered = {
       search: "buscar",
       gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
     },
+    telugu:{
+      search:"వెతకండి",
+      gptSearchPlaceholder:"ప్రముఖమైన సినిమాలు, సిరీస్‌లు ఎక్స్‌ప్లోర్ చేయండి",
+
+    }
   };
   
 export default languagePrefered;

@@ -63,12 +63,20 @@ const GPTSearchBar = () => {
 
   const langKey=useSelector((store)=>store.config.language);
   return (
+   
+
+    
+      
+
+    
     <div className='gpt-searchbar'>
+   
       <input 
       ref={searchText}
       placeholder={language[langKey].gptSearchPlaceholder}></input>
       <button onClick={handleGPTSearch}>{language[langKey].search}</button>
     </div>
+    
   )
 }
 

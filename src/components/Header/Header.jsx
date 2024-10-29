@@ -12,6 +12,7 @@ import {  ignOut } from "firebase/auth";
 import {toogleGptSearchValue} from "../../redux/gptSlice"
 import { SUPPORTED_LANGUAGES } from '../../utils/consts'
 import { changeLanguage } from '../../redux/configSlice'
+import { removeGptMovies } from '../../redux/gptSlice'
 
 const Header = () => {
 
@@ -46,6 +47,8 @@ const Header = () => {
   const handleGPTSearch=()=>{
     //do something
     dispatch(toogleGptSearchValue());
+    dispatch(removeGptMovies());
+    
   }
 
   const gptSearchValue=useSelector(store=>store.gpt.gptSearchValue);
