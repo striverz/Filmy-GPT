@@ -19,6 +19,7 @@
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     animation: shimmer 2s infinite;
+    text-align: center;
 }
 .trailer-error1{
     background: #000;

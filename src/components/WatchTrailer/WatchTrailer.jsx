@@ -20,7 +20,7 @@ const WatchTrailer = () => {
     if (!watchTrailer) {
       timer = setTimeout(() => {
         setIsVideoNotFound(true);
-      }, 4000); // 3 seconds
+      }, 5000); // 3 seconds
     } else {
       setIsVideoNotFound(false); // reset if watchTrailer becomes available
     }

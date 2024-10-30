@@ -24,6 +24,10 @@ const GPTSearchBar = () => {
   }
 
   const handleGPTSearch=async()=>{
+
+    if(!searchText.current.value) {
+      return <h1>null</h1>
+    }
     //Entire ChatGPT Thingy
     const gptQuery ="Act as a Movie Recommendation system and suggest some movies for the query : " +searchText.current.value +". only give me names of 7 movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
     const gptSearchResults = await openai.chat.completions.create({
@@ -31,7 +35,7 @@ const GPTSearchBar = () => {
       model: "gpt-3.5-turbo",
     });
     if (!gptSearchResults.choices) {
-        return <DotsLoading/>
+        return;
     }
     const gptResults = gptSearchResults.choices?.[0]?.message?.content.split(",");
     const promiseArray=gptResults.map((movie)=>searchMovieTMDB(movie));
@@ -66,10 +70,10 @@ const GPTSearchBar = () => {
       <input 
       ref={searchText}
       placeholder={language[langKey].gptSearchPlaceholder}></input>
-      {/* <button onClick={handleGPTSearch}>{language[langKey].search}</button> */}
+      <button onClick={handleGPTSearch}>{language[langKey].search}</button>
 
       
-      <button onClick={handleDummySearch}>{language[langKey].search}</button>
+      {/* <button onClick={handleDummySearch}>{language[langKey].search}</button> */}
       
     </div>
     
