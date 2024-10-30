@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./TrailerHeader.css"
-import { LOGO } from '../../utils/consts'
+import logo from "../../assets/logo.png"
 import { useDispatch } from 'react-redux'
 import { removePlayTrailer } from '../../redux/trailerSlice'
 import { useNavigate } from 'react-router-dom'
@@ -29,7 +29,7 @@ const TrailerHeader = () => {
 
   return (
     <div className={!darkMode ? 'trailer-header1' :'trailer-header2'}>
-       <img  src={LOGO} alt='logo' className='logo'></img>
+       <img  src={logo} alt='logo' className='logo'></img>
        <div className='dark-container'>
         <button className={darkMode ? 'dark-mode1 dark-mode':'dark-mode2 dark-mode'} onClick={handleDarkMode}>{!darkMode ? <FaMoon/>: <FaSun/>}</button>
        <button onClick={handleTrailerClick} className='trailer-btn'>Go to Browse</button>

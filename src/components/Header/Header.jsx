@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import "./Header.css"
-import {LOGO} from "../../utils/consts"
+// import {LOGO} from "../../utils/consts"
 import { useSelector,useDispatch } from 'react-redux'
 import { removeUser } from '../../redux/userSlice'
 import { useNavigate } from 'react-router-dom'
@@ -14,6 +14,7 @@ import { SUPPORTED_LANGUAGES } from '../../utils/consts'
 import { changeLanguage } from '../../redux/configSlice'
 import { removeGptMovies } from '../../redux/gptSlice'
 import { FaSearch } from 'react-icons/fa';
+import logo from "../../assets/logo.png"
 
 const Header = () => {
 
@@ -62,7 +63,7 @@ const Header = () => {
 
   return (
     <div className="header">
-            <img src={LOGO} alt="logo" className="logo" />
+            <img src={logo} alt="logo" className="logo" />
 
             {data ? (
                 <div className="nav-right">

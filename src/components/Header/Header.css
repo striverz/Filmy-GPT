@@ -6,11 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
- 
+    padding: 5px 20px;
+    
 }
 .logo{
-    width: 150px;
+    width: 140px;
 }
 .avatar{
     width: 35px;
@@ -52,8 +52,8 @@
 } */
 
 .nav-right button {
-    padding: 10px;
-    width: 160px;
+    padding: 8px 10px;
+    width: 162px;
     border: none;
     background-color: transparent; /* Keep background transparent */
     border: solid #fff 2px; /* Border color */
@@ -99,12 +99,9 @@
         font-size:13px ;
         font-weight: 500;
     }
-    .header{
-        justify-content: center;
-       
-    }
+    
     .logo{
-        width: 130px;
+        width: 100px;
     }
     .nav-right select{
         display: none;
