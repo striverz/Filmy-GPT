@@ -17,7 +17,7 @@ const usePlayTrailer = (movieId) => {
             const fetchTrailers = json?.results?.filter((movie) => movie.type === "Trailer");
             const trailer = fetchTrailers ? fetchTrailers[0] : json?.results[0];
 
-            // console.log(trailer);
+            
             dispatch(addPlayTrailer(trailer));
         } catch (error) {
             console.error('Error fetching movie videos:', error);

@@ -47,11 +47,8 @@ const GPTSearchBar = () => {
 
   const handleDummySearch=async()=>{
     const gptDummyResults = ["Gangubai Kathiawadi","Eega","Bahubali","vikram","RRR",];
-    
-
     const promiseArray=gptDummyResults.map((movie)=>searchMovieTMDB(movie));
     const tmdbResults = await Promise.all(promiseArray);
-
     dispatch(addGptMovies({movieNames:gptDummyResults,movieResults:tmdbResults}));
 
   }
@@ -70,10 +67,10 @@ const GPTSearchBar = () => {
       <input 
       ref={searchText}
       placeholder={language[langKey].gptSearchPlaceholder}></input>
-      <button onClick={handleGPTSearch}>{language[langKey].search}</button>
+      {/* <button onClick={handleGPTSearch}>{language[langKey].search}</button> */}
 
       
-      {/* <button onClick={handleDummySearch}>{language[langKey].search}</button> */}
+      <button onClick={handleDummySearch}>{language[langKey].search}</button>
       
     </div>
     
