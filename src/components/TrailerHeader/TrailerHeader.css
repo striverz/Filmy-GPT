@@ -1,0 +1,98 @@
+/* Global reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* TrailerHeader.css */
+.trailer-header1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #fff; /* Adjust to underline if a full border isn't needed */
+}
+.trailer-header2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #fff; /* Adjust to underline if a full border isn't needed */
+}
+.trailer-header1{
+    background:#000 ;
+}
+.trailer-header2 {
+    background:#fff ;
+}
+
+/* Optional for the logo and button */
+.logo {
+    cursor: pointer;
+}
+
+
+.trailer-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(229, 9, 20, 0.3);
+}
+
+/* Hover and focus states for a more interactive button */
+.trailer-btn:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+.trailer-btn:focus {
+    outline: none;
+    background-color: #a3060e;
+}
+.dark-container{
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dark-mode{
+    font-size: 20px;
+    padding: 7px;
+    color: red;
+    cursor: pointer;
+    border: none;
+   
+   
+}
+.dark-mode:hover {
+    transform: scale(1.03);
+}
+
+.dark-mode1{
+    background: #fff;
+}
+.dark-mode2{
+    background: #000;
+}
+
+

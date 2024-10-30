@@ -15,7 +15,7 @@ const MovieCard = ({movieImg,movieId}) => {
 
   const handleClick=()=>{
     dispatch(addMovieId(movieId));
-    navigate("/watch");
+    navigate(`/watch/${movieId}`);
   }
  
   return (

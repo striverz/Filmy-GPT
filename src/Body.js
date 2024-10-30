@@ -21,7 +21,7 @@ const Body = () => {
       element:<Browse/>
     },
     {
-      path:"/watch",
+      path:"/watch/:id",
       element:<WatchTrailer/>
     }
   ])

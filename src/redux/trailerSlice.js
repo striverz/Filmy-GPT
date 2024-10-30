@@ -18,6 +18,7 @@ const trailerSlice=createSlice({
         },
         removePlayTrailer:(state,action)=>{
             state.playTrailer=null;
+            state.movieId=null;
         }
     }
 })
