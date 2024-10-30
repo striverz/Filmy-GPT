@@ -1,5 +1,7 @@
 .video-play {
-    width: 100%;     
+    width: 100%;  
+    background: linear-gradient(to top right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+      
 }
 .iframe-style {
    
@@ -8,15 +10,17 @@
     aspect-ratio: 16/9; 
     border: none;
     height: 100%;
+   
+
+    
 
    
    
 }
 
-
 @media(max-width:650px){
     .iframe-style{
-       
+        height: 60vh;
         aspect-ratio: 16/17;
     }
 }

@@ -2,46 +2,84 @@
     position: absolute;
     color: #fff;
     width: 400px;
+    max-width: 90vw; /* Make it responsive for smaller screens */
     border-radius: 8px; /* Rounded corners */
-    padding: 16px; /* Spacing inside the container */
-   
+    padding: 6px 10px; /* Increased spacing inside the container */
     margin-bottom: 160px;
+    text-align: left; /* Left align text */
+    overflow: hidden;
+
     
-  
-    
-    
+   
 }
 
 .video-info h1 {
-    font-size: 24px; /* Adjust font size */
-    margin-bottom: 8px; /* Space between title and overview */
+    font-size: 26px; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+   
 }
 
 .video-info p {
-    font-size: 14px; /* Adjust font size */
-    line-height: 1.5; /* Improved line height for readability */
-    margin-bottom: 16px; /* Space between paragraph and buttons */
+    font-size: 16px; /* Increased font size */
+    line-height: 1.6; /* Improved line height for readability */
+    
+    opacity: 0.9; /* Slight transparency for a modern look */
 }
 
 .video-info button {
-    background-color: #e50914; /* Netflix red */
+    
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
     color: #fff;
     border: none;
-    padding: 10px 16px; /* Button padding */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-right: 8px; /* Space between buttons */
-    font-size: 16px; /* Button font size */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    border: 1.2px solid rgba(255, 255, 255, 0.5); /* Light transparent border */
+    padding: 8px 14px; /* Increased padding for buttons */
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 12px; 
+    font-size: 15px;
+    font-weight: 600; /* Semi-bold font */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; /* Smooth transition for hover */
+    backdrop-filter: blur(6px); /* Blur effect for background */
+    
 }
+.btn-c {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .play-btn {
+    display: flex;
+    align-items: center; /* Vertically centers the icon and text */
+    justify-content: center; /* Horizontally centers the icon and text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #ff0000; /* Example background color */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  .play-btn svg {
+    margin-right: 5px; /* Space between icon and text */
+  }
 
 .video-info button:hover {
-    background-color: #f40612; /* Darker red on hover */
+    background-color: rgba(255, 255, 255, 0.5); /* More opaque on hover */
+    border-color: rgba(255, 255, 255, 0.8); /* Darker border on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
+@media(max-width: 950px) {
+    .video-info p {
+        display: none; /* Hide paragraph on smaller screens */
+    }
+}
 
-@media(max-width:750px){
-    .video-info{
-        display: none;
+@media(max-width: 650px) {
+    .video-info {
+       display: none; /* Hide video info container on very small screens */
     }
 }

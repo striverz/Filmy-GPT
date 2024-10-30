@@ -7,11 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-
-    
-
-    
-  
+ 
 }
 .logo{
     width: 150px;
@@ -36,7 +32,7 @@
     
 }
 
-.nav-right button{
+/* .nav-right button{
     padding: 10px;
     width: 160px;
     border: none;
@@ -47,10 +43,40 @@
     font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
 
-   
+} */
 
+.nav-right button {
+    padding: 10px;
+    width: 160px;
+    border: none;
+    background-color: transparent; /* Keep background transparent */
+    border: solid #fff 2px; /* Border color */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    gap: 5px; /* Space between icon and text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* Subtle shadow */
 }
+
+.nav-right button:hover {
+    transform: scale(1.03); /* Slightly increase size on hover */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6); /* Enhanced shadow on hover */
+}
+
+
+
 
 .nav-right select{
     padding: 7px;
@@ -69,14 +95,16 @@
 
 @media(max-width:650px){
     .nav-right button{
-        width: 130px;
+        width: 145px;
+        font-size:13px ;
+        font-weight: 500;
     }
     .header{
         justify-content: center;
        
     }
     .logo{
-        width: 140px;
+        width: 130px;
     }
     .nav-right select{
         display: none;

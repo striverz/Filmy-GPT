@@ -18,7 +18,7 @@ const TrailerContainer = () => {
 
   return (
     <div className="trailer-container">
-      <VideoInfo title={original_title} overview={overview} />
+      <VideoInfo title={original_title} overview={overview} id={id} />
       <VideoPlay movieId={id} />
     </div>
   );

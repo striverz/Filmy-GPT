@@ -13,6 +13,7 @@ import {toogleGptSearchValue} from "../../redux/gptSlice"
 import { SUPPORTED_LANGUAGES } from '../../utils/consts'
 import { changeLanguage } from '../../redux/configSlice'
 import { removeGptMovies } from '../../redux/gptSlice'
+import { FaSearch } from 'react-icons/fa';
 
 const Header = () => {
 
@@ -76,17 +77,40 @@ const Header = () => {
                     
                   </select> :null}
 
-                  <button className='search-btn' onClick={handleGPTSearch}>{gptSearchValue ? "Browse" :"GPT Search"}</button>
+                  <button className='search-btn' onClick={handleGPTSearch}>
+    {gptSearchValue ? (
+        "Browse"
+    ) : (
+        <>
+            <FaSearch /> GPT Search
+        </>
+    )}
+</button>
+
 
                    
 
         
-                    <img src={avatar} className='avatar' alt="avatar" onClick={() => {
-                  signOut(auth).then(() => {
-                    // Sign-out successful.
-                  }).catch((error) => {
-                    // An error happened.
-                  });
+                  <img src={avatar} className='avatar' alt="avatar" onClick={() => {
+
+                        const confirmSignOut = window.confirm("Are you sure you want to Sign Out?");
+                        if (confirmSignOut) {
+                                  signOut(auth).then(() => {
+                            // Sign-out successful.
+                                   }).catch((error) => {
+                            // An error happened.
+                                    });
+                          // Proceed with sign out logic here
+                          console.log("User signed out.");
+                          // For example, clear user session, redirect, etc.
+                        } else {
+                          console.log("Sign out canceled.");
+                        }
+
+                        
+
+
+                  
 
                 }}/>
                     
