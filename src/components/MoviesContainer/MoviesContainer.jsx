@@ -10,10 +10,10 @@ const MoviesContainer = () => {
   
   return (
     <div className='movies-container'>
-      <MoviesList title={"Now Playing"} movies={movies.nowPlayingMovies} />
+      <MoviesList title={"NOW Playing"} movies={movies.nowPlayingMovies} />
+      <MoviesList title={"TOP Rated"} movies={movies.topRatedMovies} />
       <MoviesList title={"Popular"} movies={movies.popularMovies} />
-      <MoviesList title={"Top Rated"} movies={movies.topRatedMovies} />
-      <MoviesList title={"Up Coming"} movies={movies.upComingMovies} />
+      <MoviesList title={"UP Coming"} movies={movies.upComingMovies} />
     </div>
   )
 }

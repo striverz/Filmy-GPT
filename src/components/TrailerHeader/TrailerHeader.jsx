@@ -28,10 +28,10 @@ const TrailerHeader = () => {
   }
 
   return (
-    <div className={darkMode ? 'trailer-header1' :'trailer-header2'}>
+    <div className={!darkMode ? 'trailer-header1' :'trailer-header2'}>
        <img  src={LOGO} alt='logo' className='logo'></img>
        <div className='dark-container'>
-        <button className={!darkMode ? 'dark-mode1 dark-mode':'dark-mode2 dark-mode'} onClick={handleDarkMode}>{!darkMode ? <FaMoon/>: <FaSun/>}</button>
+        <button className={darkMode ? 'dark-mode1 dark-mode':'dark-mode2 dark-mode'} onClick={handleDarkMode}>{!darkMode ? <FaMoon/>: <FaSun/>}</button>
        <button onClick={handleTrailerClick} className='trailer-btn'>Go to Browse</button>
        </div>
        

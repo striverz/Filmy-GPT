@@ -14,8 +14,8 @@ const Browse = () => {
   
   //custom hood for calling api and putting data into our appStore
   useNowPlayingMovies();
-  usePopularMovies();
   useTopRatedMovies();
+  usePopularMovies();
   useUpcomingMovies();
  
 

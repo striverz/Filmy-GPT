@@ -29,9 +29,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid #fff; /* Adjust to underline if a full border isn't needed */
+  
 }
 .trailer-header1{
     background:#000 ;
@@ -77,10 +76,15 @@
 }
 .dark-mode{
     font-size: 20px;
-    padding: 7px;
+   
+    padding-top: 7.5px;
+    padding-left: 5px;
+    padding-right:5px;
     color: red;
     cursor: pointer;
     border: none;
+
+    
    
    
 }

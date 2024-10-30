@@ -45,10 +45,11 @@ const GPTSearchBar = () => {
     
     const gptResults = [
       "Gangubai Kathiawadi",
-      "Jersey",
+      "vikram",
+      "Eega",
       "Brahmāstra: Part One – Shiva",
-      "Bholaa",
-      "Zara Hatke Zara Bachke",
+      "Bahubali",
+      "RRR",
       "Rocky Aur Rani Ki Prem Kahani",
       "Gadar 2"
     ];
