@@ -8,12 +8,12 @@
     margin-bottom: 160px;
     text-align: left; /* Left align text */
     overflow: hidden;
-
-    
-   
+  
 }
 
 .video-info h1 {
+
+    
     font-size: 26px; /* Increased font size */
     font-weight: bold; /* Bold text */
     text-transform: uppercase; /* Uppercase for emphasis */
@@ -23,6 +23,9 @@
 }
 
 .video-info p {
+    margin: 10px 0px;
+   
+    
     font-size: 16px; /* Increased font size */
     line-height: 1.6; /* Improved line height for readability */
     

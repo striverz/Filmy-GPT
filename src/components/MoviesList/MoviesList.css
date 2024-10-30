@@ -1,7 +1,17 @@
 .movies-list{
-    padding: 10px;
+    padding: 4px 10px ;
+    margin: 7px 0px;
+    
+}
+.movies-list h3{
+    padding-left: 14px;
+    
+    margin: 0;
+    margin-bottom:5px ;
+   
 }
 .movies-list-cards {
+    margin: 0;
     display: flex;
     overflow-x: scroll; /* Enable horizontal scrolling */
     scrollbar-width: none; /* Hide scrollbar in Firefox */

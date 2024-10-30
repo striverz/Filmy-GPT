@@ -101,10 +101,10 @@ const Header = () => {
                             // An error happened.
                                     });
                           // Proceed with sign out logic here
-                          console.log("User signed out.");
+                          
                           // For example, clear user session, redirect, etc.
                         } else {
-                          console.log("Sign out canceled.");
+                          
                         }
 
                         
