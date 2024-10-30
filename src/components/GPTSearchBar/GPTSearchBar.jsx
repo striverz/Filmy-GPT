@@ -67,10 +67,10 @@ const GPTSearchBar = () => {
       <input 
       ref={searchText}
       placeholder={language[langKey].gptSearchPlaceholder}></input>
-      {/* <button onClick={handleGPTSearch}>{language[langKey].search}</button> */}
+      <button onClick={handleGPTSearch}>{language[langKey].search}</button>
 
       
-      <button onClick={handleDummySearch}>{language[langKey].search}</button>
+      {/* <button onClick={handleDummySearch}>{language[langKey].search}</button> */}
       
     </div>
     
