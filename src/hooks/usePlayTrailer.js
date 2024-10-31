@@ -20,7 +20,7 @@ const usePlayTrailer = (movieId) => {
             
             dispatch(addPlayTrailer(trailer));
         } catch (error) {
-            console.error('Error fetching movie videos:', error);
+            
         }
     }
 
