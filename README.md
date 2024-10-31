@@ -1,5 +1,5 @@
 # FilmyGPT 🎥
-### Welcome to FilmyGPT – a next-generation, AI-powered movie recommendation app! Leveraging the power of OpenAI’s GPT, TMDB, Firebase, and custom-built APIs, FilmyGPT offers a highly personalized and interactive experience for movie enthusiasts.
+Welcome to FilmyGPT – a next-generation, AI-powered movie recommendation app! Leveraging the power of OpenAI’s GPT, TMDB, Firebase, and custom-built APIs, FilmyGPT offers a highly personalized and interactive experience for movie enthusiasts.
 
 ## Project Overview
 FilmyGPT combines AI-based recommendations with comprehensive movie data. It provides users with suggestions based on personal taste, genre, and preferences, enhancing movie discovery through interactive and data-driven design.
@@ -27,7 +27,7 @@ cd FilmyGPT
 ```bash
 npm install
 ```
-
+### Start the application
 ```
 npm start
 ```
@@ -38,7 +38,7 @@ npm start
 
 - Browse Movies: Explore detailed movie information fetched from TMDB, including release dates, genres, ratings, and more.
 
-## Contributing
+## Contributing..🚀
 We welcome contributions! Follow these steps to contribute:
 - Fork the repository.
 - Create a new branch
