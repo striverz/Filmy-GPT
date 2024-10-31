@@ -4,7 +4,7 @@ Welcome to FilmyGPT – a next-generation, AI-powered movie recommendation app! 
 ## Project Overview
 FilmyGPT combines AI-based recommendations with comprehensive movie data. It provides users with suggestions based on personal taste, genre, and preferences, enhancing movie discovery through interactive and data-driven design.
 
-### [LIVE DEOM](https://flixgpt.online)
+### LIVE LINK : [FilmyGPT](https://flixgpt.online)
 
 ## Features
 - AI-Powered Recommendations
