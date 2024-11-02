@@ -9,7 +9,7 @@ const TrailerContainer = () => {
   // Check if movies is not defined or if it's an empty array
   if (!movies || movies.length === 0) return null;
 
-  const mainMovie = movies[1];
+  const mainMovie = movies[0];
 
   // Check if mainMovie is defined before destructuring
   if (!mainMovie) return null;
