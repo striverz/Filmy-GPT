@@ -18,7 +18,11 @@ const GPTSearchBar = () => {
 
     const data=await fetch('https://api.themoviedb.org/3/search/movie?query='+movie+'&include_adult=false&language=en-US&page=1',API_OPTIONS);
 
+    
+
     const json=await data.json();
+
+    console.log(json);
     return json.results;
 
   }
@@ -29,7 +33,8 @@ const GPTSearchBar = () => {
       return <h1>null</h1>
     }
     //Entire ChatGPT Thingy
-    const gptQuery ="Act as a Movie Recommendation system and suggest some movies for the query : " +searchText.current.value +". only give me names of 7 movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmaal, Koi Mil Gaya";
+    const gptQuery = `Please act as a Movie Recommendation system and suggest 7 movies based on the following query: "${searchText.current.value}". Only provide the names of the movies, separated by commas, following this example format: "Gadar, Sholay, Don, Golmaal, Koi Mil Gaya".`;
+
     const gptSearchResults = await openai.chat.completions.create({
       messages: [{ role: "user", content: gptQuery }],
       model: "gpt-3.5-turbo",
